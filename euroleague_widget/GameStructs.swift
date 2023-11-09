@@ -28,10 +28,11 @@ struct GameEntry : View {
     let game: Game
     
     var body: some View {
-        return HStack {
+        HStack {
             VStack(alignment: .leading) {
                 HStack (alignment: .top) {
-                    Text(game.isPlayed ? "Previous:" : "Next:").frame(maxWidth: .infinity, alignment: .leading)
+                    Text(game.isPlayed ? "Previous" : "Next")
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 5)
                         .foregroundStyle(.gray)
                     Text(formatDate(date:game.gameDate))
@@ -44,22 +45,22 @@ struct GameEntry : View {
                     }
                     if (game.isPlayed) {
                         Text(" \(game.teamScore) - \(game.versusScore) ")
-                        Text(game.win ? " W " : " L ")
+                        Text(!game.win ? " W " : " L ")
                             .foregroundStyle(.black)
                             .background(
-                                game.win
+                                !game.win
                                 ? Color(red: 90/255, green: 179/255, blue: 121/255)
-                                : .red
+                                : Color(red: 215/255, green: 57/255, blue: 53/255)
                             )
                             .clipShape(.rect(cornerRadius: 10))
                     } else {
                         Text(
-                            game.gameDate.formatted(.dateTime.hour(.twoDigits(amPM:.omitted)).minute()))
+                            game.gameDate.formatted(.dateTime.hour(.twoDigits(amPM:.omitted)).minute())).font(.system(size: 13))
                     }
                 }
             }
         }
-        .padding(.bottom, 10)
+        .padding(.bottom, 5)
         .fontWeight(.semibold)
         .font(.system(size: 11))
     }

@@ -52,7 +52,7 @@ func formatDate(date: Date)-> String{
         return "Tomorrow"
     default:
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, dd/MM"
+        dateFormatter.dateFormat = "EEE, dd/MM"
         let weekDay = dateFormatter.string(from: date)
         return weekDay
     }
@@ -75,6 +75,7 @@ struct widgetEntryView : View {
         }
         .font(.system(size: 10))
         .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .top)
+        .padding(.bottom, 10)
     }
 }
 
@@ -92,8 +93,6 @@ struct widget: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
     }
 }
 
