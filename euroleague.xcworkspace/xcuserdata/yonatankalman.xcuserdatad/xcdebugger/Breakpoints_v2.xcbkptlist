@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C774ECCD-7D9D-4700-8A6B-A7E85412016F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FD2E321-7584-4970-88D6-1F2122E8A55D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchGames()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "createGame(game:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59 - 50d89d6f328aacab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "3520">
+               </Location>
+               <Location
+                  uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59 - 50d89d6f328aac8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "2860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F7E46EC-7D2B-436D-ACBD-E608F430B498"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchGames()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F7E46EC-7D2B-436D-ACBD-E608F430B498 - f1cccb34d84b264b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for static euroleague_widgetExtension.GamesFetcher.fetchGames() async throws -&gt; Swift.Optional&lt;euroleague_widgetExtension.TeamGames&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "8F7E46EC-7D2B-436D-ACBD-E608F430B498 - 7e934a4994e6ddaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SwiftyXMLParser.XML.Accessor) -&gt; Swift.Bool in static euroleague_widgetExtension.GamesFetcher.fetchGames() async throws -&gt; Swift.Optional&lt;euroleague_widgetExtension.TeamGames&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "8F7E46EC-7D2B-436D-ACBD-E608F430B498 - f1cccb34d84b264b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for static euroleague_widgetExtension.GamesFetcher.fetchGames() async throws -&gt; Swift.Optional&lt;euroleague_widgetExtension.TeamGames&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "864">
+               </Location>
+               <Location
+                  uuid = "8F7E46EC-7D2B-436D-ACBD-E608F430B498 - f1cccb34d84b2674"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for static euroleague_widgetExtension.GamesFetcher.fetchGames() async throws -&gt; Swift.Optional&lt;euroleague_widgetExtension.TeamGames&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12FC1522-8BCE-40F9-9BD3-DCFBCE9FE334"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "createGame(game:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF7BB45C-B551-45CA-82D8-3CFF68D31CFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "createGame(game:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD3CAC41-B6CC-43A9-8199-5E2321331A90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "euroleague_widget/gamesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "createGame(game:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "BD3CAC41-B6CC-43A9-8199-5E2321331A90 - 50d89d6f328aa258"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1444">
+               </Location>
+               <Location
+                  uuid = "BD3CAC41-B6CC-43A9-8199-5E2321331A90 - 50d89d6f328aa258"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
+                  moduleName = "euroleague_widgetExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
