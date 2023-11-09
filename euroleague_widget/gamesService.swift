@@ -16,7 +16,7 @@ func parseDate (dateStr: String) -> Date {
 }
 
 func createGame (game: SwiftyXMLParser.XML.Accessor) -> Game? {
-    let isHomeGame = game.attributes["versusType"] == "vs"
+    let isHomeGame = game.attributes["versustype"] == "vs"
     return Game(
         rivalTeamName: game.attributes["versus"]!,
         gameDate: parseDate(dateStr: game.attributes["gamedate"]!),
@@ -31,12 +31,12 @@ func createGame (game: SwiftyXMLParser.XML.Accessor) -> Game? {
 
 struct GamesFetcher {
     
-    static func fetchGames () async throws -> TeamGames? {
+    static func fetchGames (teamCode: String) async throws -> TeamGames? {
         let url = URL(string: "https://api-live.euroleague.net/v1/teams?seasonCode=E\(Calendar.current.component(.year, from: Date()))")!
         let (xmlString, _) = try await URLSession.shared.data(from: url)
         let xml = XML.parse(xmlString)
         if let club = xml.clubs.club.first(where: {
-            $0.attributes["code"] == "TEL"
+            $0.attributes["code"] == teamCode
         }){
             let games = club.games
             let playedGames = games.phase.game
@@ -61,7 +61,7 @@ struct GamesFetcher {
                 .sorted(by: {$0!.gameDate < $1!.gameDate}).first!
             return TeamGames(lastGame: lastGame!, nextGame: nextGame!)
         } else {
-            print("failed to find maccabi")
+            print("failed to find team")
             return nil
         }
     }

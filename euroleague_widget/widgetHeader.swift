@@ -9,15 +9,16 @@ import Foundation
 import SwiftUI
 
 struct WidgetHeader: View {
-    let team: String
+    let teamName: String
+    let teamIcon: String
     
     var body: some View {
         HStack{
             HStack() {
-                Image("maccabi")
+                Image(teamIcon)
                     .resizable()
                     .frame(width: 25, height: 25)
-                Text(team)
+                Text(teamName)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .font(.system(size: 15))
             }

@@ -45,10 +45,10 @@ struct GameEntry : View {
                     }
                     if (game.isPlayed) {
                         Text(" \(game.teamScore) - \(game.versusScore) ")
-                        Text(!game.win ? " W " : " L ")
+                        Text(game.win ? " W " : " L ")
                             .foregroundStyle(.black)
                             .background(
-                                !game.win
+                                game.win
                                 ? Color(red: 90/255, green: 179/255, blue: 121/255)
                                 : Color(red: 215/255, green: 57/255, blue: 53/255)
                             )
