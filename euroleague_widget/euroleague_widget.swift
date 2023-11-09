@@ -58,71 +58,19 @@ func formatDate(date: Date)-> String{
     }
 }
 
-struct GameEntry : View {
-    let game: Game
-    
-    var body: some View {
-        return HStack {
-            VStack(alignment: .leading) {
-                HStack (alignment: .top) {
-                    Text(game.isPlayed ? "Previous:" : "Next:").frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.bottom, 5)
-                    Text(formatDate(date:game.gameDate))
-                }
-                HStack {
-                    Text(game.rivalTeamName)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    if (game.isPlayed) {
-                        Text(" \(game.teamScore) - \(game.versusScore) ")
-                        Text(game.win ? " W " : " L ")
-                            .foregroundStyle(.black)
-                            .background(
-                                game.win
-                                ? Color(red: 90/255, green: 179/255, blue: 121/255)
-                                : .red
-                            )
-                            .clipShape(.rect(cornerRadius: 10))
-                    } else {
-                        Text(
-                            game.gameDate.formatted(.dateTime.hour(.twoDigits(amPM:.omitted)).minute()))
-                    }
-                }
-            }
-        }
-        .padding(.bottom, 10)
-        .fontWeight(.semibold)
-        .font(.system(size: 11))
-    }
-}
-
 struct widgetEntryView : View {
     var entry: Provider.Entry
     var team: String = "Maccabi Tel Aviv"
     let image = Image("maccabi")
+    @Environment(\.widgetFamily) var widgetSize
 
     var body: some View {
         VStack {
-            HStack{
-                HStack() {
-                    Image("maccabi")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .padding(.bottom, 5)
-                        .padding(.top, 5)
-                    Text(team)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .font(.system(size: 15))
-                }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .padding(.bottom, 5)
-                Image("euroleague")
-                    .resizable()
-                    .frame(width: 40, height: 20)
-                    .padding(.trailing, -10.0)
-            }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            if (widgetSize != .systemSmall) {
+                WidgetHeader(team: team)
+            }
             GameEntry(game: entry.games.lastGame)
-            Divider()
-                .padding(.bottom, 10)
+            Divider().padding(.bottom, 10)
             GameEntry(game: entry.games.nextGame)
         }
         .font(.system(size: 10))
@@ -149,7 +97,7 @@ struct widget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemMedium) {
     widget()
 } timeline: {
     SimpleGameEntry(date: .now, games: TeamGames(

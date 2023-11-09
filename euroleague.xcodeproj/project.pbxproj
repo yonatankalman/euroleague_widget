@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E53DDC62AFD1BF50054F5BE /* GameStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53DDC52AFD1BF50054F5BE /* GameStructs.swift */; };
+		4E53DDCA2AFD3A940054F5BE /* widgetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53DDC92AFD3A940054F5BE /* widgetHeader.swift */; };
 		4E8321E62AF6D0A900B6C868 /* euroleagueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8321E52AF6D0A900B6C868 /* euroleagueApp.swift */; };
 		4E8321E82AF6D0A900B6C868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8321E72AF6D0A900B6C868 /* ContentView.swift */; };
 		4E8321EA2AF6D0AA00B6C868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8321E92AF6D0AA00B6C868 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		1F2683238D98AC2E947215C8 /* Pods-euroleagueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-euroleagueTests.debug.xcconfig"; path = "Target Support Files/Pods-euroleagueTests/Pods-euroleagueTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CA989D2B6A4F79366130BC5 /* Pods-euroleague_widgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-euroleague_widgetExtension.release.xcconfig"; path = "Target Support Files/Pods-euroleague_widgetExtension/Pods-euroleague_widgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		4E53DDC52AFD1BF50054F5BE /* GameStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStructs.swift; sourceTree = "<group>"; };
+		4E53DDC92AFD3A940054F5BE /* widgetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetHeader.swift; sourceTree = "<group>"; };
 		4E8321E22AF6D0A900B6C868 /* euroleague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = euroleague.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8321E52AF6D0A900B6C868 /* euroleagueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = euroleagueApp.swift; sourceTree = "<group>"; };
 		4E8321E72AF6D0A900B6C868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				4E8322202AF6D0D000B6C868 /* Info.plist */,
 				4E8322282AF6D2EA00B6C868 /* gamesService.swift */,
 				4E53DDC52AFD1BF50054F5BE /* GameStructs.swift */,
+				4E53DDC92AFD3A940054F5BE /* widgetHeader.swift */,
 			);
 			path = euroleague_widget;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E53DDCA2AFD3A940054F5BE /* widgetHeader.swift in Sources */,
 				4E8322292AF6D2EA00B6C868 /* gamesService.swift in Sources */,
 				4E83221B2AF6D0CF00B6C868 /* euroleague_widgetBundle.swift in Sources */,
 				4E53DDC62AFD1BF50054F5BE /* GameStructs.swift in Sources */,
