@@ -11,15 +11,15 @@ import SwiftUI
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleGameEntry {
         SimpleGameEntry(date: .now, games: TeamGames(
-            lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true),
-            nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false)
+            lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true, isHomeGame: false),
+            nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false, isHomeGame: true)
         ))
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleGameEntry) -> ()) {
         let entry = SimpleGameEntry(date: .now, games: TeamGames(
-            lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true),
-            nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false  )
+            lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true, isHomeGame: false),
+            nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false, isHomeGame: true  )
         ))
         completion(entry)
     }
@@ -101,7 +101,7 @@ struct widget: Widget {
     widget()
 } timeline: {
     SimpleGameEntry(date: .now, games: TeamGames(
-        lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true),
-        nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false)
+        lastGame: Game(rivalTeamName: "Team A", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: true, isHomeGame: true),
+        nextGame: Game(rivalTeamName: "Team B", gameDate: .now, teamScore: 100, versusScore: 0, win: true, confirmedDate: true, isPlayed: false, isHomeGame: false)
     ))
 }

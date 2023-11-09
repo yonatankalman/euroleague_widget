@@ -16,6 +16,7 @@ struct Game: Decodable {
     let win: Bool
     let confirmedDate: Bool
     let isPlayed: Bool
+    let isHomeGame: Bool
 }
 
 struct TeamGames: Decodable {
@@ -32,11 +33,15 @@ struct GameEntry : View {
                 HStack (alignment: .top) {
                     Text(game.isPlayed ? "Previous:" : "Next:").frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.bottom, 5)
+                        .foregroundStyle(.gray)
                     Text(formatDate(date:game.gameDate))
                 }
                 HStack {
-                    Text(game.rivalTeamName)
-                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    HStack{
+                        Image(systemName: game.isHomeGame ? "house.fill" : "airplane")
+                        Text(game.rivalTeamName)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    }
                     if (game.isPlayed) {
                         Text(" \(game.teamScore) - \(game.versusScore) ")
                         Text(game.win ? " W " : " L ")

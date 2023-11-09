@@ -14,58 +14,10 @@
             filePath = "euroleague_widget/gamesService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "fetchGames()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "euroleague_widget/gamesService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "createGame(game:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59 - 50d89d6f328aacab"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
-                  moduleName = "euroleague_widgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "3520">
-               </Location>
-               <Location
-                  uuid = "8372FEA6-C6B0-4D20-9139-DD8974361C59 - 50d89d6f328aac8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "euroleague_widgetExtension.createGame(game: SwiftyXMLParser.XML.Accessor) -&gt; Swift.Optional&lt;euroleague_widgetExtension.Game&gt;"
-                  moduleName = "euroleague_widgetExtension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yonatankalman/Dev/euroleague/euroleague_widget/gamesService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "2860">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +30,8 @@
             filePath = "euroleague_widget/gamesService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "fetchGames()"
             landmarkType = "7">
             <Locations>
@@ -158,22 +110,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "createGame(game:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF7BB45C-B551-45CA-82D8-3CFF68D31CFE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "euroleague_widget/gamesService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
             landmarkName = "createGame(game:)"
             landmarkType = "9">
          </BreakpointContent>

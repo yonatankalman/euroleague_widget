@@ -17,17 +17,16 @@ func parseDate (dateStr: String) -> Date {
 
 func createGame (game: SwiftyXMLParser.XML.Accessor) -> Game? {
     let isHomeGame = game.attributes["versusType"] == "vs"
-    do {
-        return Game(
-            rivalTeamName: game.attributes["versus"]!,
-            gameDate: parseDate(dateStr: game.attributes["gamedate"]!),
-            teamScore: Int(game.attributes[isHomeGame ? "standingslocalscore" : "standingsroadscore"]!)!,
-            versusScore: Int(game.attributes[isHomeGame ? "standingsroadscore" : "standingslocalscore"]!)!,
-            win: game.attributes["win"] == "1",
-            confirmedDate: game.attributes["confirmeddate"] == "true",
-            isPlayed: game.attributes["played"] == "true"
-        )
-    } catch { return nil }
+    return Game(
+        rivalTeamName: game.attributes["versus"]!,
+        gameDate: parseDate(dateStr: game.attributes["gamedate"]!),
+        teamScore: Int(game.attributes[isHomeGame ? "standingslocalscore" : "standingsroadscore"]!)!,
+        versusScore: Int(game.attributes[isHomeGame ? "standingsroadscore" : "standingslocalscore"]!)!,
+        win: game.attributes["win"] == "1",
+        confirmedDate: game.attributes["confirmeddate"] == "true",
+        isPlayed: game.attributes["played"] == "true",
+        isHomeGame: isHomeGame
+    )
 }
 
 struct GamesFetcher {
