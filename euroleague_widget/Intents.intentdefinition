@@ -45,6 +45,36 @@
 					<key>INEnumValueName</key>
 					<string>BER</string>
 				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>FC Bayern Munich</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>QQSYNK</string>
+					<key>INEnumValueIndex</key>
+					<integer>3</integer>
+					<key>INEnumValueName</key>
+					<string>MUN</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>Real Madrid</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>pTRJYl</string>
+					<key>INEnumValueIndex</key>
+					<integer>4</integer>
+					<key>INEnumValueName</key>
+					<string>MAD</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>FC Barcelona</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>X2ckDh</string>
+					<key>INEnumValueIndex</key>
+					<integer>5</integer>
+					<key>INEnumValueName</key>
+					<string>BAR</string>
+				</dict>
 			</array>
 		</dict>
 	</array>
