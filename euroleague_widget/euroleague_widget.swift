@@ -38,10 +38,6 @@ struct Provider: IntentTimelineProvider {
             ) else {
                 return
             }
-            guard let games2 = try? await getGames( TEAM_CONFIG[configuration.Team]!["teamCode"]!
-            ) else {
-                return
-            }
             let entry = SimpleGameEntry(date: .now, games: games, team: configuration.Team)
             //TODO: Set next update to when next game ends or daily
             let nextUpdate = Calendar.current.date(
