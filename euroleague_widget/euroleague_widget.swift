@@ -34,7 +34,12 @@ struct Provider: IntentTimelineProvider {
         in context: Context,
         completion: @escaping (Timeline<Entry>) -> ()) {
         Task {
-            guard let games = try? await GamesFetcher.fetchGames(teamCode: TEAM_CONFIG[configuration.Team]!["teamCode"]!) else {
+            guard let games = try? await getGames( TEAM_CONFIG[configuration.Team]!["teamCode"]!
+            ) else {
+                return
+            }
+            guard let games2 = try? await getGames( TEAM_CONFIG[configuration.Team]!["teamCode"]!
+            ) else {
                 return
             }
             let entry = SimpleGameEntry(date: .now, games: games, team: configuration.Team)
