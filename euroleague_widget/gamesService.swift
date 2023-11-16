@@ -30,7 +30,6 @@ private func createGame (game: SwiftyXMLParser.XML.Accessor) -> Game? {
 }
 
 private func fetchGames (teamCode: String) async throws -> TeamGames? {
-    print("Hello World")
     let url = URL(string: "https://api-live.euroleague.net/v1/teams?seasonCode=E\(Calendar.current.component(.year, from: Date()))")!
     let (xmlString, _) = try await URLSession.shared.data(from: url)
     let xml = XML.parse(xmlString)

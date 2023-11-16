@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0BD2022B02C5DD0010A987 /* timeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD2012B02C5DD0010A987 /* timeUtils.swift */; };
 		4E53DDC62AFD1BF50054F5BE /* GameStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53DDC52AFD1BF50054F5BE /* GameStructs.swift */; };
 		4E53DDCA2AFD3A940054F5BE /* widgetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53DDC92AFD3A940054F5BE /* widgetHeader.swift */; };
 		4E53DDCC2AFD933A0054F5BE /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4E53DDCB2AFD933A0054F5BE /* Intents.intentdefinition */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		1F2683238D98AC2E947215C8 /* Pods-euroleagueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-euroleagueTests.debug.xcconfig"; path = "Target Support Files/Pods-euroleagueTests/Pods-euroleagueTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CA989D2B6A4F79366130BC5 /* Pods-euroleague_widgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-euroleague_widgetExtension.release.xcconfig"; path = "Target Support Files/Pods-euroleague_widgetExtension/Pods-euroleague_widgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4E0BD2012B02C5DD0010A987 /* timeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeUtils.swift; sourceTree = "<group>"; };
 		4E53DDC52AFD1BF50054F5BE /* GameStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStructs.swift; sourceTree = "<group>"; };
 		4E53DDC92AFD3A940054F5BE /* widgetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetHeader.swift; sourceTree = "<group>"; };
 		4E53DDCB2AFD933A0054F5BE /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				4E53DDCB2AFD933A0054F5BE /* Intents.intentdefinition */,
 				4E53DDCF2AFD9B1B0054F5BE /* teamConfig.swift */,
 				4EEBAA7F2B028DAF0001386A /* memoizeUtil.swift */,
+				4E0BD2012B02C5DD0010A987 /* timeUtils.swift */,
 			);
 			path = euroleague_widget;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				4E53DDCA2AFD3A940054F5BE /* widgetHeader.swift in Sources */,
 				4E8322292AF6D2EA00B6C868 /* gamesService.swift in Sources */,
 				4E83221B2AF6D0CF00B6C868 /* euroleague_widgetBundle.swift in Sources */,
+				4E0BD2022B02C5DD0010A987 /* timeUtils.swift in Sources */,
 				4E53DDC62AFD1BF50054F5BE /* GameStructs.swift in Sources */,
 				4E83221D2AF6D0CF00B6C868 /* euroleague_widget.swift in Sources */,
 			);

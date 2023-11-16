@@ -7,30 +7,16 @@
 
 import Foundation
 
-let TEAM_CONFIG: [Team: [String: String]] = [
-    .tEL: [
-        "name": "Maccabi Tel Aviv",
-        "teamCode": "TEL",
-        "teamIcon": "maccabi"
-    ],
-    .bER: [
-        "name": "Alba Berlin",
-        "teamCode": "BER",
-        "teamIcon": "alba"
-    ],
-    .mUN: [
-        "name": "FC Bayern Munich",
-        "teamCode": "MUN",
-        "teamIcon": "munich"
-    ],
-    .mAD: [
-        "name": "Real Madrid",
-        "teamCode": "MAD",
-        "teamIcon": "madrid"
-    ],
-    .bAR: [
-        "name": "FC Barcelona",
-        "teamCode": "BAR",
-        "teamIcon": "barcelona"
-    ]
+struct TeamConfigRecord {
+    let name: String;
+    let teamCode: String;
+    let teamIcon: String;
+}
+
+let TEAM_CONFIG: [Team: TeamConfigRecord] = [
+    .tEL: TeamConfigRecord(name: "Maccabi Tel Aviv", teamCode: "TEL", teamIcon: "maccabi"),
+    .bER: TeamConfigRecord(name: "Alba Berlin", teamCode: "BER", teamIcon: "alba"),
+    .mUN: TeamConfigRecord(name: "FC Bayern Munich", teamCode: "MUN", teamIcon: "munich"),
+    .mAD: TeamConfigRecord(name: "Real Madrid", teamCode: "MAD", teamIcon: "madrid"),
+    .bAR: TeamConfigRecord(name: "FC Barcelona", teamCode: "BAR", teamIcon: "barcelona"),
 ]

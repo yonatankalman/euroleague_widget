@@ -34,15 +34,12 @@ struct Provider: IntentTimelineProvider {
         in context: Context,
         completion: @escaping (Timeline<Entry>) -> ()) {
         Task {
-            guard let games = try? await getGames( TEAM_CONFIG[configuration.Team]!["teamCode"]!
+            guard let games = try? await getGames( TEAM_CONFIG[configuration.Team]!.teamCode
             ) else {
                 return
             }
             let entry = SimpleGameEntry(date: .now, games: games, team: configuration.Team)
-            //TODO: Set next update to when next game ends or daily
-            let nextUpdate = Calendar.current.date(
-                byAdding: DateComponents(day: 1), to: Date()
-            )!
+            let nextUpdate = getNextUpdateTime(nextGame: games.nextGame)
             let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
             completion(timeline)
         }
@@ -73,7 +70,6 @@ func formatDate(date: Date)-> String{
 
 struct widgetEntryView : View {
     var entry: Provider.Entry
-    let image = Image("maccabi")
     @Environment(\.widgetFamily) var widgetSize
 
     var body: some View {
@@ -82,7 +78,7 @@ struct widgetEntryView : View {
         
         return VStack {
             if (widgetSize != .systemSmall) {
-                WidgetHeader(teamName: team["name"]!, teamIcon: team["teamIcon"]!)
+                WidgetHeader(teamName: team.name, teamIcon: team.teamIcon)
             }
             GameEntry(game: entry.games.lastGame)
             Divider().padding(.bottom, 10)
